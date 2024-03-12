@@ -189,6 +189,7 @@ vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = 'Open new blank buffer i
 vim.keymap.set('n', '<leader>bl', ':buffers<CR>', { desc = 'List open buffers' })
 vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Switch to next buffer' })
 vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to previous buffer' })
+vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Close current buffer' })
 
 -- [[ Basic Autocommands ]]
 --  See :help lua-guide-autocommands
@@ -362,6 +363,10 @@ require('lazy').setup {
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
       require('mini.statusline').setup()
+
+      -- Buffers are listed in the order of their identifier.
+      -- Different highlight groups for "states" of buffer affecting 'buffer tabs'.
+      require('mini.tabline').setup()
 
       -- Highlighting is done only in modifiable buffer by default, only in Normal mode, and stops in Insert mode and when leaving window.
       -- Trim all trailing whitespace with MiniTrailspace.trim().
