@@ -178,7 +178,7 @@ return {
           { type = 'text', val = 'Quick links', opts = { hl = 'SpecialComment', position = 'center' } },
           { type = 'padding', val = 1 },
           dashboard.button('e', '  New file', '<cmd>ene<CR>'),
-          dashboard.button('SPC f f', '  Find file', '<cmd>:Vifm<CR>'),
+          dashboard.button('SPC f f', '  Find file'),
           dashboard.button('SPC s f', '  Telescope'),
           dashboard.button('SPC s n', '  Configuration'),
           dashboard.button('u', '  Update plugins', '<cmd>Lazy sync<CR>'),

@@ -185,11 +185,17 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Keybinds to make buffer navigation easier.
-vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = 'Open new blank buffer in new window' })
-vim.keymap.set('n', '<leader>bl', ':buffers<CR>', { desc = 'List open buffers' })
-vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Switch to next buffer' })
-vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to previous buffer' })
-vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Close current buffer' })
+vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = '[E]dit new blank [B]uffer in new window' })
+vim.keymap.set('n', '<leader>bl', ':buffers<CR>', { desc = '[L]ist open [B]uffers' })
+vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Switch to [N]ext [B]uffer' })
+vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to [P]revious [B]uffer' })
+vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
+vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
+
+-- Keybinds for the Vifm Plugin
+vim.keymap.set('n', '<leader>ff', ':Vifm<CR>', { desc = '[F]ind [F]ile in Vifm' })
+vim.keymap.set('n', '<leader>ft', ':TabVifm<CR>', { desc = 'Open [F]ilemanager in a new [T]ab' })
+vim.keymap.set('n', '<leader>fv', ':VsplitVifm<CR>', { desc = 'Open [F]ilemanager in a [V]ertical Split' })
 
 -- [[ Basic Autocommands ]]
 --  See :help lua-guide-autocommands
