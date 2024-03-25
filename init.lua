@@ -51,7 +51,7 @@ vim.opt.showmode = false
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+-- vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -123,7 +123,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Keybinds to make buffer navigation easier.
 vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = '[E]dit new blank [B]uffer in new window' })
-vim.keymap.set('n', '<leader>bl', ':buffers<CR>', { desc = '[L]ist open [B]uffers' })
+vim.keymap.set('n', '<leader>bf', ':bfirst<CR>', { desc = 'Switch to [F]irst [B]uffer' })
+vim.keymap.set('n', '<leader>bl', ':blast<CR>', { desc = 'Switch to [L]ast [B]uffer' })
 vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Switch to [N]ext [B]uffer' })
 vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to [P]revious [B]uffer' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
@@ -133,11 +134,20 @@ vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffe
 vim.keymap.set('n', '<leader>ff', ':Vifm<CR>', { desc = '[F]ind [F]ile in Vifm' })
 vim.keymap.set('n', '<leader>ft', ':TabVifm<CR>', { desc = 'Open [F]ilemanager in a new [T]ab' })
 vim.keymap.set('n', '<leader>fv', ':VsplitVifm<CR>', { desc = 'Open [F]ilemanager in a [V]ertical Split' })
+vim.keymap.set('n', '<leader>fe', vim.cmd.Ex, { desc = 'Open [F]ile tree in [E]x mode' })
 
 -- Keybinds for the Prose Functions
 vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
 vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T]oggle [S]pellchecking' })
 
+-- greatest remap ever
+vim.keymap.set('x', '<leader>p', [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set('n', '<leader>Y', [["+Y]])
+
+vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 -- [[ Basic Autocommands ]]
 --  See :help lua-guide-autocommands
 
