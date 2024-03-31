@@ -140,6 +140,10 @@ vim.keymap.set('n', '<leader>fe', vim.cmd.Ex, { desc = 'Open [F]ile tree in [E]x
 vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
 vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T]oggle [S]pellchecking' })
 
+-- Keymaps for Peek.nvim
+vim.keymap.set('n', '<leader>po', ':PeekOpen<CR>', { desc = '[P]eek [O]pen' })
+vim.keymap.set('n', '<leader>pc', ':PeekClose<CR>', { desc = '[P]eek [C]lose' })
+
 -- greatest remap ever
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
