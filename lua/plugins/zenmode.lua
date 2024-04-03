@@ -1,7 +1,3 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
 return {
   {
     'folke/zen-mode.nvim',
@@ -48,19 +44,5 @@ return {
         },
       },
     },
-  },
-
-  {
-    'reedes/vim-pencil',
-    init = function()
-      vim.g['pencil#wrapModeDefault'] = 'soft'
-      vim.cmd [[
-      augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
-]]
-    end,
   },
 }
