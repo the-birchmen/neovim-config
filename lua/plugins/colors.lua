@@ -9,6 +9,7 @@ end
 return {
   {
     'folke/tokyonight.nvim',
+    name = 'tokyonight',
     priority = 1000,
     config = function()
       require('tokyonight').setup {
@@ -38,7 +39,7 @@ return {
         disable_background = true,
       }
 
-      vim.cmd 'colorscheme rose-pine'
+      -- vim.cmd 'colorscheme rose-pine'
 
       ColorMyPencils()
     end,
