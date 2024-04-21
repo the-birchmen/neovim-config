@@ -31,11 +31,11 @@ vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to [P]revio
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
 vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
 
--- Keybinds for the Vifm Plugin
+-- Keybinds for the File Manager Plugins
 vim.keymap.set('n', '<leader>ff', ':Vifm<CR>', { desc = '[F]ind [F]ile in Vifm' })
 vim.keymap.set('n', '<leader>ft', ':TabVifm<CR>', { desc = 'Open [F]ilemanager in a new [T]ab' })
 vim.keymap.set('n', '<leader>fv', ':VsplitVifm<CR>', { desc = 'Open [F]ilemanager in a [V]ertical Split' })
-vim.keymap.set('n', '<leader>fe', vim.cmd.Ex, { desc = 'Open [F]ile tree in [E]x mode' })
+vim.keymap.set('n', '<leader>fo', ':Oil<CR>', { desc = 'Open [F]ile tree in [O]il mode' })
 
 -- Function for toggling set spell
 function ToggleSpell(scope)
