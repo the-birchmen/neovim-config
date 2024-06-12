@@ -59,9 +59,6 @@ vim.opt.scrolloff = 10
 -- Enable Spellchecking
 vim.opt.spelllang = 'en_us'
 
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
-
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

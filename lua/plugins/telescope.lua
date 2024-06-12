@@ -103,7 +103,12 @@ return {
         }
       end, { desc = '[S]earch [/] in Open Files' })
 
-      -- Shortcut for searching your neovim configuration files
+      -- Shortcut for searching my Obsidian Vault
+      vim.keymap.set('n', '<leader>sv', function()
+        builtin.find_files { cwd = '/home/dustin/Second-Brain' }
+      end, { desc = '[S]earch Obsidian [V]ault' })
+
+      -- Shortcut for searching my neovim configuration files
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
