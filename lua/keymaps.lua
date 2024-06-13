@@ -53,11 +53,14 @@ vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode'
 vim.keymap.set('n', '<leader>po', ':PeekOpen<CR>', { desc = '[P]eek [O]pen' })
 vim.keymap.set('n', '<leader>pc', ':PeekClose<CR>', { desc = '[P]eek [C]lose' })
 
--- greatest remap ever
+-- greatest remap ever per thePrimagen
+-- if you copy and paste over other text it keeps the originally copied text
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
+-- yanks into system clipboard as apost to y that yanks and remains in neovim
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set('n', '<leader>Y', [["+Y]])
 
+-- Deletes to void register
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
