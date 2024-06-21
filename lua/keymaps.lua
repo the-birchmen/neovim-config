@@ -24,10 +24,10 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Keybinds to make buffer navigation easier.
 vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = '[E]dit new blank [B]uffer in new window' })
-vim.keymap.set('n', '<leader>bf', ':bfirst<CR>', { desc = 'Switch to [F]irst [B]uffer' })
-vim.keymap.set('n', '<leader>bl', ':blast<CR>', { desc = 'Switch to [L]ast [B]uffer' })
-vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Switch to [N]ext [B]uffer' })
-vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Switch to [P]revious [B]uffer' })
+vim.keymap.set('n', '<leader>bh', ':bfirst<CR>', { desc = 'Switch to First [B]uffer [H]jkl' })
+vim.keymap.set('n', '<leader>bl', ':blast<CR>', { desc = 'Switch to Last [B]uffer hjk[L]' })
+vim.keymap.set('n', '<leader>bj', ':bnext<CR>', { desc = 'Switch to Next [B]uffer h[J]kl' })
+vim.keymap.set('n', '<leader>bk', ':bprevious<CR>', { desc = 'Switch to Previous [B]uffer hj[K]l' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
 vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
 
@@ -52,6 +52,9 @@ vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T
 vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
 vim.keymap.set('n', '<leader>po', ':PeekOpen<CR>', { desc = '[P]eek [O]pen' })
 vim.keymap.set('n', '<leader>pc', ':PeekClose<CR>', { desc = '[P]eek [C]lose' })
+
+-- keymap for trimming whitespace with mini-trailspace
+vim.keymap.set('n', '<leader>tw', ':lua MiniTrailspace.trim()<CR>', { desc = '[T]rim [W]hitespace' })
 
 -- greatest remap ever per thePrimagen
 -- if you copy and paste over other text it keeps the originally copied text
