@@ -9,6 +9,8 @@ return {
     --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
     'BufReadPre /home/dustin/Second-Brain/**.md',
     'BufNewFile /home/dustin/Second-Brain/**.md',
+    'BufReadPre /home/dustin/Linux-Wiki/**.md',
+    'BufNewFile /home/dustin/Linux-Wiki/**.md',
   },
   dependencies = {
     -- Required.
@@ -21,6 +23,10 @@ return {
       {
         name = 'Second-Brain',
         path = '~/Second-Brain',
+      },
+      {
+        name = 'Linux-Wiki',
+        path = '~/Linux-Wiki',
       },
     },
   },
