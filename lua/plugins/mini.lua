@@ -37,9 +37,6 @@ return {
 
       -- Moves lines around with Alt hjkl while in Nomal and Visual Modes
       require('mini.move').setup()
-
-      -- Highlight and trim trailing white space.
-      require('mini.trailspace').setup()
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
