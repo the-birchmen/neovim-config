@@ -3,7 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
- {
+  {
     'toppair/peek.nvim',
     event = { 'VeryLazy' },
     build = 'deno task --quiet build:fast', -- requires deno system package be installed

@@ -39,7 +39,7 @@ return {
         -- requires  Alacritty Version 0.10.0 or higher
         -- uses `alacritty msg` subcommand to change font size
         alacritty = {
-          enabled = false,
+          enabled = true,
           font = '16', -- font size
         },
       },
