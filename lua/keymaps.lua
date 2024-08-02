@@ -50,20 +50,23 @@ vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T
 
 -- Keybinds for the Prose Functions
 vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
-vim.keymap.set('n', '<leader>po', ':PeekOpen<CR>', { desc = '[P]eek [O]pen' })
-vim.keymap.set('n', '<leader>pc', ':PeekClose<CR>', { desc = '[P]eek [C]lose' })
+vim.keymap.set('n', '<leader>to', ':PeekOpen<CR>', { desc = '[T]urn Peek [O]pen' })
+vim.keymap.set('n', '<leader>tc', ':PeekClose<CR>', { desc = '[T]urn Peek [C]lose' })
 
 -- keymap for trimming whitespace with mini-trailspace
 vim.keymap.set('n', '<leader>tw', ':lua MiniTrailspace.trim()<CR>', { desc = '[T]rim [W]hitespace' })
 
 -- greatest remap ever per thePrimagen
 -- if you copy and paste over other text it keeps the originally copied text
-vim.keymap.set('x', '<leader>p', [["_dP]])
+vim.keymap.set('x', '<leader>P', [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
 -- yanks into system clipboard as apost to y that yanks and remains in neovim
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set('n', '<leader>Y', [["+Y]])
+
+-- pastes from the system clipboard
+vim.keymap.set('n', '<leader>p', [["+P]])
 
 -- Deletes to void register
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
