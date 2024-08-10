@@ -26,8 +26,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<leader>be', ':enew<CR>', { desc = '[E]dit new blank [B]uffer in new window' })
 vim.keymap.set('n', '<leader>bh', ':bfirst<CR>', { desc = 'Switch to First [B]uffer [H]jkl' })
 vim.keymap.set('n', '<leader>bl', ':blast<CR>', { desc = 'Switch to Last [B]uffer hjk[L]' })
-vim.keymap.set('n', '<leader>bk', ':bnext<CR>', { desc = 'Switch to Next [B]uffer hj[K]l' })
-vim.keymap.set('n', '<leader>bj', ':bprevious<CR>', { desc = 'Switch to Previous [B]uffer h[J]kl' })
+vim.keymap.set('n', '<leader>bj', ':bnext<CR>', { desc = 'Switch to Next [B]uffer h[J]kl' })
+vim.keymap.set('n', '<leader>bk', ':bprevious<CR>', { desc = 'Switch to Previous [B]uffer hj[K]l' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
 vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
 
