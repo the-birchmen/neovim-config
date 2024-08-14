@@ -1,4 +1,4 @@
---[[Keymaps]]
+---[[Keymaps]]
 --
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
@@ -31,6 +31,10 @@ vim.keymap.set('n', '<leader>bk', ':bprevious<CR>', { desc = 'Switch to Previous
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
 vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
 
+-- Keybinds for Code Function
+vim.keymap.set('n', '<leader>cp', ':w !python %<CR>', { desc = 'Run [P]ython Code' })
+vim.keymap.set('n', '<leader>cm', ':PeekOpen<CR>', { desc = 'Peek [M]arkdown File' })
+
 -- Keybinds for the File Manager Plugins
 vim.keymap.set('n', '<leader>ff', ':Vifm<CR>', { desc = '[F]ind [F]ile in Vifm' })
 vim.keymap.set('n', '<leader>ft', ':TabVifm<CR>', { desc = 'Open [F]ilemanager in a new [T]ab' })
@@ -50,8 +54,6 @@ vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T
 
 -- Keybinds for the Prose Functions
 vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
-vim.keymap.set('n', '<leader>to', ':PeekOpen<CR>', { desc = '[T]urn Peek [O]pen' })
-vim.keymap.set('n', '<leader>tc', ':PeekClose<CR>', { desc = '[T]urn Peek [C]lose' })
 
 -- keymap for trimming whitespace with mini-trailspace
 vim.keymap.set('n', '<leader>tw', ':lua MiniTrailspace.trim()<CR>', { desc = '[T]rim [W]hitespace' })
