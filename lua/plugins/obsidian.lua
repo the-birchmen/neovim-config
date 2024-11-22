@@ -24,10 +24,10 @@ return {
         name = 'Second-Brain',
         path = '~/Second-Brain',
       },
-      -- {
-      name = 'Linux-Wiki',
-      path = '~/Nextcloud/Linux-Wiki',
-      -- },
+      {
+        name = 'Linux-Wiki',
+        path = '~/Nextcloud/Linux-Wiki',
+      },
     },
   },
 }
