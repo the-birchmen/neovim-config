@@ -150,6 +150,8 @@ return {
         --
         marksman = {},
 
+        texlab = {},
+
         pyright = {},
 
         lua_ls = {
@@ -193,6 +195,7 @@ return {
         'pyright',
         'isort',
         'black',
+        'texlab',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
