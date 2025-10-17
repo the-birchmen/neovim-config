@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-  color = color or 'tokyonight'
+  color = color or 'gruvbox'
   vim.cmd.colorscheme(color)
   vim.cmd.hi 'Comment gui=none'
   vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
@@ -19,6 +19,8 @@ return {
       }
     end,
   },
+
+  { 'ellisonleao/gruvbox.nvim', priority = 1000, config = true },
 
   {
     'catppuccin/nvim',

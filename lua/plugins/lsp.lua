@@ -222,6 +222,12 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        -- bashls = {
+        --   cmd = { 'bash-language-server', 'start' },
+        --   filetypes = { 'sh', 'bash' },
+        -- },
+        bashls = true,
+
         marksman = {},
 
         texlab = {},
@@ -264,6 +270,7 @@ return {
         'isort',
         'black',
         'texlab',
+        'bashls',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
