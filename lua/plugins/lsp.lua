@@ -230,6 +230,8 @@ return {
 
         marksman = {},
 
+        gdtoolkit = {},
+
         texlab = {},
 
         pyright = {},
@@ -271,6 +273,7 @@ return {
         'black',
         'texlab',
         'bashls',
+        'gdtoolkit',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

@@ -4,16 +4,19 @@
 
 This repo represents my config of neovim. The configuratin is based on the fantastic kickstart.nvim project and fulfills my needs of:
 
-* Markdown editing
-* Writing Program
-* Basic programing environment
+* Word Processing Program
+* Markdown and Latex editing
+* Basic programing environment for python and shell
 
 ## Installation
 
 ### Install Neovim
 
-Birchmen.nvim targets *only* the latest version of nvim. This means whatever version is in the Arch/Manjaro repos. Functionality will never be dependant on a 'nightly' build
-['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
+Birchmen.nvim targets *only* the latest version of nvim. This means whatever version is in the Arch repos.
+
+[Neovim release](https://github.com/neovim/neovim/releases/tag/stable)
+[Arch Neovim package](https://archlinux.org/packages/?name=neovim)
+
 If you are experiencing issues, please make sure you have the latest versions.
 
 ### Install External Dependencies
@@ -24,6 +27,7 @@ If you are experiencing issues, please make sure you have the latest versions.
 External Requirements:
 - Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
+- `wl-clipboard` for system clipboard integration in wayland
 - Language Setup:
   - If want to write Typescript, you need `npm`
   - If want to write Golang, you will need `go`
@@ -52,5 +56,4 @@ Start Neovim
 nvim
 ```
 
-That's it! Lazy will install all the plugins you have. Use `:Lazy` to view
-current plugin status.
+That's it! Lazy will install all the plugins you have. Use `:Lazy` to view current plugin status.
