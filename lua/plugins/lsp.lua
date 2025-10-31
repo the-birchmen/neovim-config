@@ -236,6 +236,8 @@ return {
 
         pyright = {},
 
+        yamlls = {},
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -273,6 +275,7 @@ return {
         'black',
         'texlab',
         'bashls',
+        'yamlls',
         'gdtoolkit',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
