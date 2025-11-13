@@ -36,9 +36,6 @@ vim.keymap.set('n', '<leader>cp', ':w !python %<CR>', { desc = 'Run [P]ython Cod
 vim.keymap.set('n', '<leader>cm', ':PeekOpen<CR>', { desc = 'Peek [M]arkdown File' })
 
 -- Keybinds for the File Manager Plugins
-vim.keymap.set('n', '<leader>ff', ':Vifm<CR>', { desc = '[F]ind [F]ile in Vifm' })
-vim.keymap.set('n', '<leader>ft', ':TabVifm<CR>', { desc = 'Open [F]ilemanager in a new [T]ab' })
-vim.keymap.set('n', '<leader>fv', ':VsplitVifm<CR>', { desc = 'Open [F]ilemanager in a [V]ertical Split' })
 vim.keymap.set('n', '<leader>fo', ':Oil<CR>', { desc = 'Open [F]ile tree in [O]il mode' })
 
 -- Function for toggling set spell
