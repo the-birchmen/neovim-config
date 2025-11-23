@@ -9,19 +9,21 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- all of that tab space stuff
+vim.opt.tabstop = 4 -- number of visual spaces per TAB
+vim.opt.softtabstop = 4 -- number of spaces in tab when editing
+vim.opt.shiftwidth = 4 -- number of spaces to use for autoindent
+vim.opt.expandtab = true -- expand tab to spaces so that tabs are spaces
+
+-- Enable break and smart indent
+vim.opt.breakindent = true
+vim.opt.smartindent = true
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
-
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
--- vim.opt.clipboard = 'unnamedplus'
-
--- Enable break indent
-vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true

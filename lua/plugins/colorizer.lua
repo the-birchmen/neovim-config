@@ -6,5 +6,10 @@ return {
   'catgoose/nvim-colorizer.lua',
   event = 'BufReadPre',
   opts = { -- set to setup table
+    filetypes = { '*' },
+    user_default_options = {
+      names = false,
+    },
+    lazy_load = true,
   },
 }
