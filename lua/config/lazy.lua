@@ -33,9 +33,9 @@ vim.g.maplocalleader = '\\'
 --
 require('lazy').setup {
 
-  {
-    dir = '~/Projects/novel.nvim/',
-  },
+  -- {
+  --   dir = '~/Projects/novel.nvim/',
+  -- },
 
   { import = 'plugins' },
 }
