@@ -39,7 +39,6 @@ vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffe
 
 -- Keybinds for Code Function
 vim.keymap.set('n', '<leader>cp', ':w !python %<CR>', { desc = 'Run [P]ython Code' })
-vim.keymap.set('n', '<leader>cm', ':PeekOpen<CR>', { desc = 'Peek [M]arkdown File' })
 
 -- Keybinds for the File Manager Plugins
 vim.keymap.set('n', '<leader>fo', ':Oil<CR>', { desc = 'Open [F]ile tree in [O]il mode' })
@@ -54,9 +53,6 @@ function ToggleSpell(scope)
 end
 
 vim.keymap.set('n', '<Leader>ts', ToggleSpell(vim.wo), { expr = true, desc = '[T]oggle [S]pellchecking' })
-
--- Keybinds for the Prose Functions
-vim.keymap.set('n', '<leader>tz', ':ZenMode<CR>', { desc = '[T]oggle [Z]en Mode' })
 
 -- keymap for trimming whitespace with mini-trailspace
 vim.keymap.set('n', '<leader>tw', ':lua MiniTrailspace.trim()<CR>', { desc = '[T]rim [W]hitespace' })
