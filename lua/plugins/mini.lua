@@ -14,6 +14,9 @@ return {
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
 
+      -- Comments
+      require('mini.comment').setup()
+
       -- Automatically underlines the word under the cursor in normal mode
       require('mini.cursorword').setup()
 

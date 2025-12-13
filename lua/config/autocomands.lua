@@ -14,7 +14,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- start git messages in insert mode
 vim.api.nvim_create_autocmd('FileType', {
-  group = vim.api.nvim_create_augroup('bufcheck', {clear = true}),
+  group = vim.api.nvim_create_augroup('bufcheck', { clear = true }),
   pattern = { 'gitcommit', 'gitrebase' },
   command = 'startinsert | 1',
 })
+
+vim.cmd [[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+]]
