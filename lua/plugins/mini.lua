@@ -34,7 +34,7 @@ return {
 
       -- Buffers are listed in the order of their identifier.
       -- Different highlight groups for "states" of buffer affecting 'buffer tabs'.
-      require('mini.tabline').setup()
+      -- require('mini.tabline').setup()
 
       -- Highlighting is done only in modifiable buffer by default, only in Normal mode, and stops in Insert mode and when leaving window.
       -- Trim all trailing whitespace with MiniTrailspace.trim().

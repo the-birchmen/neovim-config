@@ -6,12 +6,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Diagnostic keymaps
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
@@ -36,9 +30,6 @@ vim.keymap.set('n', '<leader>bj', ':bprevious<CR>', { desc = 'Switch to Previous
 vim.keymap.set('n', '<leader>bk', ':bnext<CR>', { desc = 'Switch to Next [B]uffer hj[K]l' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete current [B]uffer' })
 vim.keymap.set('n', '<leader>bw', ':bw<CR>', { desc = '[W]ipeout current [B]uffer' })
-
--- Keybinds for Code Function
-vim.keymap.set('n', '<leader>cp', ':w !python %<CR>', { desc = 'Run [P]ython Code' })
 
 -- Keybinds for the File Manager Plugins
 vim.keymap.set('n', '<leader>fo', ':Oil<CR>', { desc = 'Open [F]ile tree in [O]il mode' })
