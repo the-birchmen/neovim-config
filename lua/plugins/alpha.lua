@@ -1,17 +1,7 @@
--- My configuration for Alpha.nvim.
--- There is probably a better way to configure this. I just copied the entire theta theme to this file.
--- https://github.com/Magi3r/nvim.git was the inspiration
 return {
   {
     'goolord/alpha-nvim',
     config = function()
-      -- originally authored by @AdamWhittingham
-
-      -- local path_ok, plenary_path = pcall(require, 'plenary.path')
-      -- if not path_ok then
-      --   return
-      -- end
-
       local dashboard = require 'alpha.themes.dashboard'
       -- local cdir = vim.fn.getcwd()
       -- local if_nil = vim.F.if_nil
@@ -38,10 +28,10 @@ return {
       local buttons = {
         type = 'group',
         val = {
-          { type = 'text', val = 'jjjjkkkkkk :wq!', opts = { hl = 'SpecialComment', position = 'center' } },
+          { type = 'text', val = 'kill -9 $(ps | grep nvim | cut -d " " -f 1)', opts = { hl = 'SpecialComment', position = 'center' } },
           { type = 'padding', val = 1 },
           dashboard.button('e', '  New file', '<cmd>ene<CR>'),
-          dashboard.button('SPC s .', '  Recent Files'),
+          dashboard.button('SPC s r', '  Recent Files'),
           dashboard.button('SPC f b', '  File Browser'),
           dashboard.button('SPC s f', '  Telescope'),
           dashboard.button('SPC s v', '  Obsidian'),
