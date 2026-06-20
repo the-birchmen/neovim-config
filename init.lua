@@ -23,7 +23,8 @@
 ]]
 
 -- [[Require Modules]]
-require('config.keymaps')
-require('config.lazy')
-require('config.options')
-require('config.autocomands')
+require 'config.keymaps'
+require 'config.lazy'
+require 'config.options'
+require 'config.autocomands'
+require 'config.completion'
