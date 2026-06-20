@@ -16,7 +16,6 @@ return {
     -- Required.
     'nvim-lua/plenary.nvim',
     'nvim-telescope/telescope.nvim',
-    'hrsh7th/nvim-cmp',
   },
   opts = {
     legacy_commands = false, -- this will be removed in the next major release
@@ -29,12 +28,6 @@ return {
         name = 'Linux-Wiki',
         path = '~/Nextcloud/Linux-Wiki',
       },
-    },
-    completion = {
-      -- Set to false to disable completion.
-      nvim_cmp = true,
-      -- Trigger completion at 2 chars.
-      min_chars = 2,
     },
   },
 }
